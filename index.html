@@ -52,6 +52,314 @@
         .vegetable{
             color: lightseagreen;
         }
+        .waibu {
+    color: blue;
+    font:italic 800 15px "黑体";
+    text-shadow:2px 3px 4px rgba(111,150,20,0.4);
+}
+.yangshibiao {
+    font-weight: bold;
+}
+#yangshibiaozongjie {
+    font-size: 20px;
+    color: #580;
+}
+.bg1 {
+    color: orangered;
+    background-color: skyblue;
+    font-size:14px;
+    width: 1000px;
+    text-align: center;
+}
+.yuansutedian {
+    background-color: orangered;
+    color: darkseagreen;
+}
+#kuaiji {
+    background-color: orangered;
+}
+#hangnei {
+    background-color: darkseagreen;
+}
+.changetohangnei {
+display: inline;/*块级标签转变为行内标签*/
+    background-color: blue;
+}
+.changetokuai{
+    display: block;/*行内标签转变为块级标签*/
+    background-color: blueviolet;
+}
+.tableshuxing:nth-child(2n+1) {
+    background-color: lightgray;
+}
+a[title]{/*属性选择器用中括号 来表示,中间不得有空格*/
+    color: yellow;
+}
+input[type=text]{/*属性选择器中具体属性*/
+    color: #580;
+}
+input[title*=j]{/*=属性选择器中只要包含其中具体属性的一部分并处于任意位置就可选中*/
+    color: red;
+}
+input[title*=chongzhi]{/*^=属性选择器中只要包含其中具体属性的一部分并处于开始位置就可选中*/
+    color: deepskyblue;
+}
+input[title*=gun]{/*$=属性选择器中只要包含其中具体属性的一部分并处于结束位置就可选中*/
+    color: peru;
+}
+/*.demo 类选择器*/
+/*:first-child 伪类选择器*/
+/*:first-letter 伪元素选择器*/
+#freestyle::first-letter {/*当前文本的第一个字*/
+    color: chartreuse;
+    font-size: 80px;
+}
+#freestyle2::first-line {/*当前文本的第一行*/
+        color: bisque;
+    background-color: green;
+}
+#mudun::selection {/*鼠标选中文本的部分*/
+    color: red;
+    background-color: yellow;
+}
+.bg:nth-child(2n+1) {
+    background-color: springgreen;
+}
+h1 {
+    height: 150px;
+    background-image: url(https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00754-2678.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#gintama {
+    color: red;
+    height: 350px;
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*如果只写一个，另一个默认center，
+    默认左上，方位名词没有顺序，
+    top bottom left right center*/
+    background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=176549514,4048758696&fm=26&gp=0.jpg);
+}
+#pic {
+    background-color: pink;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: 100px 30px;/*精切单位 第一值一定是x坐标，第二个值一定是y坐标*/
+    background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=176549514,4048758696&fm=26&gp=0.jpg);
+}
+body {
+    background:rgba(255,60,20,0.5);/*!*背景半透明*!;*!*/
+    background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2540107602,3705008879&fm=11&gp=0.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: 100%;
+    /*background-attachment:
+    fixed;随页面滚动，一直在视野之中
+    scroll;默认，随页面滚走,滑动完就上去了*/
+}
+#pic1 {
+    color: red;
+    background-color: pink;
+    height: 350px;
+    background-size: contain;
+    /*background-size: 宽度 高度;
+    只设置一个参数自动缩放
+    background-size: 50％;将整个图片缩放为一半*/
+    /*background-size: cover;设置为cover时，会自动调整缩放比例，
+        保证图片始终充满背景区域，如有溢出部分则会被隐藏。*/
+    /*background-size: contain;设置为contain会自动调整缩放比例，保证图片始终完整显示在背景区域。*/
+    background-repeat: no-repeat;
+    background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=176549514,4048758696&fm=26&gp=0.jpg);
+}
+#multpic {
+    height: 700px;
+    color: red;
+    background:
+            url(https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=39838980,3008580887&fm=111&gp=0.jpg) no-repeat left top,
+            url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=176549514,4048758696&fm=26&gp=0.jpg) no-repeat right bottom hotpink;
+/*用逗号进行分隔*/
+}
+#tu {
+    color: #ccc;
+    background-color: #ccc;
+    text-shadow: 1px 1px 2px #000,-1px -1px 2px #fff;
+    font-size: 30px;
+}
+#ao {
+    color: #ccc;
+    background-color: #ccc;
+    text-shadow: -1px -1px 2px #000 ,1px 1px 2px #fff;
+    font-size: 30px;
+}
+.wangzhe {
+    /*background-color: orange;*/
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;/*把a 行内元素转换为行内块元素*/
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+.wangzhe:hover { /*鼠标经过*/
+    background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=385762833,3332564845&fm=26&gp=0.jpg) no-repeat  center center  ;
+    background-size: cover;
+}
+#youxianji {
+    background-color: slategray;
+}
+#boxone {
+    width: 200px;
+    height: 50px;
+    border: 2px  dotted #ffff88 ;
+    text-align: center;
+}
+#tableborder {
+    width: 700px;
+    height: 300px;
+    border-collapse: collapse;
+    border: 2px solid #ffff88;
+}
+.tablenei {
+    width: 140px;
+    height: 60px;
+    border: 1px solid #ff6600;
+    text-align: center;
+    color: 	Fuchsia;
+}
+#round {
+    width: 200px;
+    height: 100px;
+    border: 1px solid Fuchsia;
+    text-align: center;
+    line-height: 100px;/*行高等于盒子高度垂直居中*/
+    border-radius: 100px;/*一个数值表示四个角都是相同的 10px的弧度*/
+   /*
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;取宽度和高度 一半 则会变成一个圆形
+    border-radius: 50％;取宽度和高度 一半 则会变成一个圆形
+    */
+    /*border-radius: 20px 40px;写两个值表示左上角和右下角为20px 左下角和右上角为40px*/
+    /*border-radius：20px 40px 80px;写三个值表示左上角为20px 左下角和右上角为40px 右下角为80px*/
+    /*border-radius：20px 40px 80px 100px;写四个值表示左上角为20px 右上角为40px 右下角为80px 左下角为100px  顺时针方向*/
+}
+#neibianju {
+    border-collapse: collapse;
+    background-color: Olive;
+}
+#waibianju {
+    border-collapse: collapse;
+    background-color: Olive;
+}
+#kuaijijuzhong {
+    width: 200px;
+    margin: 0 auto;/*盒子水平居中只要左右改为auto就可以了*/
+    text-align: center;
+}
+#juzhongpic {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+}
+#bgpicjuzhong {
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    background:
+            url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=514054986,239268249&fm=26&gp=0.jpg) no-repeat center center;
+    background-size: cover;
+}
+.qingchubianju {
+    padding:0;
+    margin :0;
+}
+.attention {
+    background-size: 20px 20px;
+    background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4168808271,216908301&fm=26&gp=0.jpg);
+    background-repeat: no-repeat;
+    text-indent: 1.5em;
+}
+.hebing {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+.father {
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    margin-top: 100px;
+    /*border: 1px solid red;解决外边距合并（塌陷）问题*/
+    /*padding: 1px;可以消除上面所带的边框*/
+    overflow:hidden;
+}
+.son {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    margin-top: 30px;
+}
+.hewaitext {
+    margin-left: 301px;
+    background-color: blue;
+    height: 18px;
+    width: 25em;
+}
+#hang {
+    display: inline-block;
+}
+.searchpic {
+    margin: 0px;
+    padding: 0px;
+    width: 238px;
+    height: 294px;
+    border: 1px solid #d9e0ee;
+    border-top: 3px solid #ff8400;/*这句话要放到border的下面*/
+}
+h6 {
+    height: 35px;
+    line-height: 35px;/*让文字垂直居中*/
+    border: 1px solid #d9e0ee;
+    font-size: 16px;
+    font-weight: normal;/*让粗体不变粗*/
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 12px;/*没有设置宽度 不会撑开盒子*/
+}
+#navpic {
+    margin: 7px 0 0 8px;/*上 右 下 左*/
+    width: 218px;
+    height: 160px;
+}
+.searchpic ul {
+    padding: 0;
+    margin: 8px;
+    list-style: none;/*取消列表自带的小点 默认的列表样式*/
+}
+.searchpic a {
+       text-decoration: none;
+    font-size: 12px;
+    color: #666;
+}
+.searchpic li{
+    background-image: url(data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAIAAAAxBA+LAAAQHUlEQVR4nO3dYXbbOBKFUU7vf88zP6aPW3Q7skQRQKHevQvIiUm4PhUlJccBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABU8Z/VfwHYz39X/wUe+R2GD/klgu9Kde5zfsnhOb8jRGvWvNf5zYcvfh0IEpu9V5gFxHL4aUv2PmQ6EMJRpxXxG8ewoCtnm70p3xIGB504z2xG+QoyR9iaA8wGxG8jZgrbcWipS/+2ZriwC2eVcvSvGVOG4hxRShC/ECYOBTmWrKR/sYwe6nAaWUD/eGQMsZYTyDz6xxOGEas4ewynf7zFVGIyR46BJJDLzCamcdi4mfhxO3OKoRwwbiOBDGVaMYijxQ0kkGnMLG7nUPERCWQVw4u7OEtcoX8UYYTxOaeI90ggBRlkfML54SX6xxZMNC5wbPiFBLIdc423ODD8kQSyNdONFzkq/EACacOM41cOCScSSEsmHU84HvxNAmnPvONHDgYSSBZTj28ciWgSSCyzjy8OQygJhMME5DgOxyCN/sGPjMJkf63+CwDASl4GpbALwq8MxEzue38SCG8xFtO4451JIFxmOOZwr3uSQLiFEZnAXe5GAuF2BmVv7m8rKgiDmJWNubl9qCCMZmK25LZ2IIEwjaHZj3u6PRWE+YzOTtzNjUkgLGR6tuFWbkkCoQgztAE3cT8qCKUYo7tzBzejglCTYbov924bEgjFmaebcuP2oIKwC1N1O25ZdRII2zFY9+J+laaCsC/jdRfuVFESCA2YsFtwmypSQWjDkK3PPapFAqEr07asv1b/BfiHCgLMJ4QAM3ilW5ZlvQS/IRDCzC3ITVlPBSGNyVuK27GSBEIsw7cO92IZFQSM4ArchQUkEPhiCi/nU6MARPNaZB6LIPCEcbyKjRCAaF6CTGIdBF5hKM/nmg8ngcBbzOXJXPCxVBC4wGieydUeSAWBy0znaVzqUVQQ+JABPYfrPIQKAncxpkdzhW8mgcDtTOqhfI8QgGheZ9zJOggMYliP49reRgWBoczrQVzYe6ggMIGRPYKregMVBKYxtW/nkn5KBYHJDO57uZ4fUUFgCbP7Ri7mdSoILGR838WVvEICgSIM8c/5Qj0A0byYeJt1ECjFHP+QC/gGCQTKMs0vc+lepYJAcQb6Nd4jBCCaFxAvsQ4CWzDTL3DRfqeCwEaM9Xe5Yr9QQWBHhvvrvEf4jAoCtOdFwx+pILA18/1FNkIAonnF8DPrINCDKf8rG+EPVBAgh9cK36kg0IxB/5zrc6KCQEtm/RMuzj9UEGjMuP8TV+ZvKgi0Z+L/yGU5DhUEYhj6/+ZTowBBvO7/t/QXB84EECh99J/ZCAGIFv2ywDoIxIqe/mc2QoBENoEvuSF0CAA4YpdjFQQ4YhtwlngRVBDgUWIJHuQ+GgWAI+11gF0Q4EdZMTizEQIQLehFgHUQ4ImgHpzZCAE4juBtIeIVQOzdBXhXRBXObIQAROvffusgwFv6h+Gs+c+rggAXNG/DmUejAETrXH3rIMBlnfNwZiMEIFrb5FsHAT7XNhIPGv6MEghwo4adOPNoFIBoQghAtG4rr+eiALfrloozGyEAv+i9Y7QKYe9bBcAIffZdFQQYqk8wzlpthADwriaBtw4CzNEkGw86bIQqCMBl26ddBQEm274cZx02QgC4TAgBiLb3guu5KMASe8fjbOOfRQUBFtq4H2cejQIQbdeiWwcBlts1IWc2QgAu6rGTbJnzHpceoIctQ/LARghAtM1CbhcEKGizlpzZCAGIJoQARNtpnfVcFKCsnXJyZiMEIJoQAnCDfR/a7bHL7nt9AaLsEZUzGyEA0YQQgGgbbLGeiwJsZIOunNkIAYgmhADcabvHeKVX2O2uJgD/V7ouZzZCAKIJIQDR6i6vnosCbK1uYM5shABEE0IAhtjlwV7REO5y+QDYXcVHuCoI0EbFzJwV3QgBYA4hBCBauZ3Vc1GAfsrF5oGNEIBotUJoHQRgslohBIDJCj22tQ4CNFaoN2c2QgCiVSm0dRCgvSrJObMRAhBNCAGYpObDPyEEIFqJENZ8jQBAgvXvXKogQJT14TkrsRECwCpCCEC0xRuq56IAgUo9HbURAhBNCAGYrdTjQCEEINrKEJZ6RQBAJhshANGWfXLHOggQrshnR22EAEQTQgCirVlMPRcF4KjxdNRGCEA0IQRgmQoPCIUQgGgLQlih/wDwfzZCAKLN/sCOdRCAb9Z+dtRGCEA0IQQgmhACEG3qg1lvEALwo4VvE9oIAYgmhACst/CRoRACEG1eCL1BCEBBNkIAok36nI51EIBfLfnsqI0QgGhCCEA0IQQgmhACEG3GG5M+KQPAi+Z/XsZGCEA0IQQgmhACUMj8d9OEEIBoQghAtOEh9JFRACqzEQIQbewXNqyDAFww89uENkIAogkhANGEEIBoQghANCEEINrAD+b4yCgAl0374KiNEIBoQghANCEEoKJp768JIQDRhBCAaEIIQLRRIfTdCQC2YCMEIJoQAhBNCAGINuSfsPEGIQC3mPAPrdkIAYgmhABEE0IAogkhANGEEIBoQghANCEEIJoQAhDt/q8q+jY9ADca/Z16GyEA0YQQgGhCCEA0IQQgmhACUNroz2AKIQDRhBCAaEIIQDQhBCCaEAIQTQgBiCaEAEQTQgCi3RxC//UEAHuxEQIQTQgBiCaEAEQTQgCiCSEA0YQQgGhCCEA0IQQgmhACEE0IAYgmhABEE0IAogkhANGEEIBoQghANCEEIJoQAhBNCAGIJoQARBNCAKIJIQDRhBCAaEIIQDQhBCCaEAIQTQgBiCaEAEQTQgCiCSEA0YQQgGhCCEA0IQQg2s0h/M+9fxwADGYjBCCaEAIQTQgBiCaEAEQTQgCiCSEA0YQQgGhCCEA0IQSgtNH/VIsQAhBNCAGIJoQARBNCAKIJIQDRhnwY578j/lAA8kz43/1shABEE0IAogkhANGEEIBoQghANCEEIJoQAhBNCAGINuqrir5TD8CHJnyb/rARAhBOCAGIJoQARBsVwjkPdgHgQzZCAKIJIQDRhBCAiqa9xSaEAEQTQgCiCSEA0cY+g/UPrQFwwczv4NkIAYgmhABEE0IAogkhANGEEIBowz+Y44OjALxl8n/bYCMEINrwEPr/mACozEYIQDQhBCCaEAJQyPw31IQQgGhCCEC0STuobxMC8KslXzSwEQIQTQgBiCaEAEQTQgCizXtj0udlAHhi1T/JaSMEINq8EPrXtwEoyEYIQDQhBGC9hU8NhRCAaLMb7LOjAHyz9kMkNkIAogkhANGEEIBoCx7MepsQgC/Lv2VuIwQg2oIQLo8/AHyxEQIQTQgBWKbCM0IhBCDashj77ChAuArr4GEjBCCcEAIQbeVi6ukoQKwiz0UPGyEA4VaGsM7LAQBi2QgBiCaEAMxW6ong4hCWuhYABLIRAjBVtRVICAGIJoQARCuxofpmPUCIEtU5K7ERFrwuAIQoEUIAWEUIAZik5vM/IQQgWqE8+8gMQGOFenNmIwQgWq1CWwoBWqoVmzMbIQDRaoWw8ksGAFqqFUIAmKziDuadQoA2KmbmzEYIQDQhBCBa0Z3V01GABoo25qzoRrjFtQOggaIhBGB3u6w0QghAtNLB9k4hwKZK1+XMRghANCEEINoGy6sHpAB72SAtD2yEANxprwoeQghAuD3K7ekowBb2iMqZjRCAaEIIQLSdtlgPSAEq26koD2yEANxg0woeQghAuM0S7ukoQEGbteTMRghANCEEINqW66wHpAB1bBmSBzZCAKLtGnJLIUAFu1bkgY0QgIsaVPDY+qewFAIstHE/zmyEAETbu+iWQoAl9o7H2fY/ixYCTLZ9Oc48GgUgmhACEK3DguvpKMA0HbJx1mEj7HdXAJimT0TshQBD9QnGWYeNEAAuaxV4SyHAIK1qcdZqI2x8nwAYpFUIARih95rR8KfzgBTgRg07cWYjBCCaEAIQre3K6wEpwOfaRuJB559RCwEu65yHM49GAYjWPPmWQoALmrfhzEYIQLT+1bcUArylfxjOIn5eLQR4UUQVzjwaBSBaUPvthQDPBSXhgY0QgONIreCR9oNbCgF+lBWDs6yNMPlOA/CjxDTYCwEeJZbgQdZGCMA34RU8Yq+ApRDgiG3AWe5F0EIgXG4AznIfjToBABzJIQRIZhn4kn4pPCAFAqWP/jMbIQDRvCw4DnshkMTc/8ZGCBBEBf/NNfmbpRBoz8T/kcvyDy0EGjPu/8SVOdFCoCWz/gkX5zstBJox6J9zfX6ghUAbpvyvfGr0B84NQA4z/4/shcDWzPcX2QgBiOYVwzOWQmBThvvrXKtfaCGwHZP9LS7X77QQ2Iix/i5X7CVaCGzBTL/ARXuVFgLFGejX+NQoANG8gHiDpRAoyzS/zKV7mxwCpZjjH3IBr9BCoAhD/HPeIwQgmhcT19kLgYWM77u4kh/RQmAJs/tGLuantBCYzOC+l+t5Ay0EpjG1b+eS3kMLgQmM7BFc1dtoITCUeT2IC3snLQQGMazHcW1vpoXA7UzqoXyhHoBoXmcMYS8E7mJMj+YKj6KFwIcM6Dlc54G0ELjMdJ7GpR5LC4ELjOaZXO3htBB4i7k8mQs+iRwCrzCU53PN59FC4AnjeBXfIwQgmpcgC1gNgS+m8HI2QgCieS2yjL0QMIIrcBdW0kKIZfjW4V6sJ4eQxuQtxe0oQQshhJlbkJtSiBxCbwZuTT41CjCDCpYlhABE8xqlIs9IoQ1Dtj73qCgthAZM2C24TaXJIezLeN2FO1WdFsJ2DNa9uF97kEPYham6HbdsG1oIxZmnm3LjNiOHUJNhui/3bj9aCKUYo7tzB7ekhVCEGdqAm7gxOYSFTM823MrtySHMZ3R24m52oIUwjaHZj3vahxzCaCZmS25rK1oIg5iVjbm53Wgh3M6g7M397UkO4RZGZAJ3uTM5hMsMxxzudX9yCG8xFtO44ynkEH5lIGZy37PIIfzIKEz21+q/AACs5GVQKKshHCYgx3E4BuHkkFhmH18cBuSQLKYe3zgS/E0Oac+840cOBidySEsmHU84HvxADmnDjONXDgl/JIdszXTjRY4Kv5BDtmOu8RYHhpfIIVsw0bjAseE9ikhBBhmfcH64Qg4pwgjjc04RH1FEVjG8uIuzxA3kkGnMLG7nUHEbOWQo04pBHC1uJofczpxiKAeMgUSRy8wmpnHYGE4OeYupxGSOHPMoIs+ZRyzh4LGAIvLIGGItJ5CVFDGW0UMdTiMlKGIIE4eCHEvKEcVmTBmKc0SpSxG3ZriwC2eVDSjiRswUtuPQshlRLMgcYWsOMHvTxSUMDjpxnmlFF8cxLOjK2aYtUfyQ6UAIR50g0viEWUAsh59osWn0mw9f/DrAd83q6JccnvM7Am8rVUq/wwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJTyP7l7I0kNNXUcAAAAAElFTkSuQmCC);
+    background-size: 3%;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    height:26px;
+    background-position: left center;
+}
+.searchpic a:hover {
+    text-decoration: underline;/*添加下划线*/
+    color: #ff8400;
+}
+
     .tips{
         font-style: italic;
     }
